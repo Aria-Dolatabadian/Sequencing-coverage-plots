@@ -1,5 +1,5 @@
 library(GenVisR)
-
+# Download file: http://genomedata.org/gen-viz-workshop/GenVisR/ALL1_CaptureDepth.tsv
 # load the ouput of samtools depth into R
 seqData <- read.delim("ALL1_CaptureDepth.tsv", header=F)
 colnames(seqData) <- c("chr", "position", "samp1", "samp2", "samp3", "samp4")
